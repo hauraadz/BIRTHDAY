@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wish Garden 🌸</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/garden.css">
+</head>
+<body>
+  <audio id="nature" autoplay loop>
+    <source src="audio/nature.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="mute-toggle">🔊</div>
+
+  <div class="garden-container">
+    <h1>🌸 Wish Garden 🌸</h1>
+    <p class="subtitle">Click a flower to read sweet wishes 💌</p>
+
+    <div class="flower-field" id="flowerField">
+      <!-- Bunga akan dimasukkan lewat JS -->
+    </div>
+
+    <div class="nav-buttons">
+      <a href="index.html" class="btn">← Back to Story</a>
+      <a href="surprise.html" class="btn">Go to Surprise Box 🎁</a>
+    </div>
+  </div>
+
+  <!-- Popup ucapan -->
+  <div class="popup hidden" id="popup">
+    <div class="popup-box">
+      <span id="popupMsg"></span>
+      <p class="from">— <span id="popupSender"></span></p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <script src="js/garden.js"></script>
+</body>
+</html>

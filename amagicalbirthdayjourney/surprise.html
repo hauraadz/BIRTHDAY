@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Box 🎁</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/surprise.css">
+</head>
+<body>
+  <audio id="bgm" autoplay loop>
+    <source src="audio/beat.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="mute-toggle">🔊</div>
+
+  <div class="surprise-container">
+    <h1>🎁 Surprise Box 🎁</h1>
+    <p class="subtitle">Klik kotaknya untuk buka hadiahmu!</p>
+
+    <div class="box-grid">
+      <div class="box" data-type="video">📹<br/>Video Ucapan</div>
+      <div class="box" data-type="gallery">🖼️<br/>Galeri Foto</div>
+      <div class="box" data-type="quiz">🧠<br/>Quiz Seru</div>
+      <div class="box" data-type="game">🎀<br/>Game</div>
+    </div>
+
+    <div class="spin-section">
+      <h2>🎲 Spin the Birthday Wheel!</h2>
+      <div class="wheel-container">
+        <button id="spinBtn">SPIN 🎉</button>
+        <p id="spinResult" class="result-text"></p>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="index.html" class="btn">← Back to Story</a>
+      <a href="garden.html" class="btn">Go to Wish Garden 🌸</a>
+      <a href="ending.html" class="btn">Make a Wish 🎂</a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-box">
+      <div id="modalContent">[konten hadiah di sini]</div>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="js/surprise.js"></script>
+</body>
+</html>
