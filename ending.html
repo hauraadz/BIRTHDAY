@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make a Wish 🎂</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ending.css">
+</head>
+<body class="ending-body">
+
+  <div class="ending-container">
+    <h1>Make a Wish... ✨</h1>
+    <p class="message">Semoga semua harapan hari ini terkabul ya 🎈</p>
+
+    <div class="candle-box">
+      <img src="images/ending/candle.gif" alt="Lilin Menyala" id="candle" />
+    </div>
+
+    <button class="btn blow-btn" id="blowBtn">Blow the Candle 🕯️</button>
+
+    <div id="confetti" class="hidden">🎉🎉🎉</div>
+
+    <p class="from-you">— dengan penuh sayang, dari<br><strong>Keluarga Panda</strong></p>
+
+    <a href="index.html" class="btn back-btn">← Kembali ke Awal</a>
+  </div>
+
+  <audio id="bgm" autoplay loop>
+    <source src="audio/happyending.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="mute-toggle">🔊</div>
+
+  <script>
+    const blowBtn = document.getElementById("blowBtn");
+    const candle = document.getElementById("candle");
+    const confetti = document.getElementById("confetti");
+    const bgm = document.getElementById("bgm");
+    const muteToggle = document.querySelector(".mute-toggle");
+
+    muteToggle.addEventListener("click", () => {
+      bgm.muted = !bgm.muted;
+      muteToggle.textContent = bgm.muted ? "🔇" : "🔊";
+    });
+
+    blowBtn.addEventListener("click", () => {
+      candle.src = "images/ending/lilinmati.png"; 
+      confetti.classList.remove("hidden");
+      blowBtn.disabled = true;
+      blowBtn.textContent = "✨ Wish Granted!";
+    });
+  </script>
+</body>
+</html>
