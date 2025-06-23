@@ -4,7 +4,7 @@ body.ending-body {
   background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
   color: #fff;
   font-family: 'Comic Neue', sans-serif;
-  overflow-x: hidden; /* ubah ini */
+  overflow-x: hidden; 
 }
 
 .ending-container {
@@ -12,6 +12,7 @@ body.ending-body {
   padding: 4rem 2rem;
   max-width: 600px;
   margin: auto;
+  padding-bottom: 5rem;
 }
 
 h1 {
