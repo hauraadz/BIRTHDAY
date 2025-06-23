@@ -1,4 +1,10 @@
 /* ending.css */
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 body.ending-body {
   background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
