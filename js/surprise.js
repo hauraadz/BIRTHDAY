@@ -73,7 +73,7 @@ document.querySelectorAll(".box").forEach((box) => {
           </div>
 
           <div id="quiz3" style="display:none; margin-top:1.5rem;">
-            <p>3. Apa makanan yang tidak disukai Mama Dini?</p>
+            <p>3. Apa makanan yang tidak disukai Dini?</p>
             <div>
               <button class="quiz-btn" data-answer="true" data-next="4">Apel</button>
               <button class="quiz-btn" data-answer="false" data-next="4">Durian</button>
