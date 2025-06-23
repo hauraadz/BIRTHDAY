@@ -4,7 +4,7 @@ body.ending-body {
   background: radial-gradient(ellipse at center, #1a1a1a 0%, #000000 100%);
   color: #fff;
   font-family: 'Comic Neue', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .ending-container {
